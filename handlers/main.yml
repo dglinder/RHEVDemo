@@ -1,0 +1,6 @@
+---
+# handlers file for RHEV
+  handlers:
+    - name: restart apache
+      service: name=httpd state=restarted
+

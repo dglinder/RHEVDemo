@@ -1,0 +1,19 @@
+    ==> default: Updating /etc/hosts file on active guest machines...
+    ==> default: Updating /etc/hosts file on host machine (password may be required)...
+    ==> default: Forcing shutdown of VM...
+    ==> default: Destroying VM and associated drives...
+    /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1392:in `initialize': Permission denied @ rb_sysopen - /Users/dan/.vagrant.d/tmp/hosts.local (Errno::EACCES)
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1392:in `open'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1392:in `block in copy_file'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1391:in `open'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1391:in `copy_file'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:485:in `copy_file'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:402:in `block in cp'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1570:in `block in fu_each_src_dest'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1586:in `fu_each_src_dest0'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:1568:in `fu_each_src_dest'
+               from /opt/vagrant/embedded/lib/ruby/2.2.0/fileutils.rb:401:in `cp'
+               from /Users/dan/.vagrant.d/gems/gems/vagrant-hostmanager-1.8.5/lib/vagrant-hostmanager/hosts_file/updater.rb:68:in `update_host'
+               from /Users/dan/.vagrant.d/gems/gems/vagrant-hostmanager-1.8.5/lib/vagrant-hostmanager/action/update_all.rb:46:in `call'
+               from /opt/vagrant/embedded/gems/gems/vagrant-1.8.5/lib/vagrant/action/warden.rb:34:in `call'
+    
