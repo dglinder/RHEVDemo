@@ -19,6 +19,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			v.memory = 4096
 			v.cpus = 1
 		end
+		db.vm.provision "shell", inline: "cat /vagrant/.ssh/id_rsa.pub >> ~vagrant/.ssh/authorized_keys" 
+#		config.vm.provision :ansible do |ansible|
+#			ansible.playbook = "setup_RHEVM.yml"
+#		end
 	end
 	
 	config.vm.define "rhevp1" do |db|

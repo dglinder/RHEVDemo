@@ -1,6 +1,6 @@
 [rhevm_servers]
-rhevp1	192.168.65.41
-rhevm	192.168.65.43
-rhevh1	192.168.65.44
-rhevh2	192.168.65.45
+#rhevp1
+rhevm
+#rhevh1
+#rhevh2
 
