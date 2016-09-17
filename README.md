@@ -1,5 +1,3 @@
-Updated via NPP 1105
-
 My Notes
 ========
 
